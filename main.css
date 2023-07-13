@@ -1,0 +1,62 @@
+html {
+    background: #f2f2f2;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.scroll-container,
+.scroll-area {
+    max-width: 100%;
+    width: 100%;
+    height: 100vh;
+    font-size: 60px;
+}
+
+.scroll-container::-webkit-scrollbar {
+    display: none;
+}
+
+.scroll-container {
+    display: -webkit-inline-box;
+    overflow: auto;
+    -webkit-scroll-snap-type: x mandatory;
+    -ms-scroll-snap-type: x mandatory;
+    scroll-snap-type: x mandatory;
+    overflow-y: hidden;
+}
+
+.scroll-area {
+    scroll-snap-align: start;
+    width: 100vw !important;
+}
+
+.scroll-container,
+.scroll-area {
+    /*   margin: 0 auto; */
+}
+
+.scroll-area {
+    /*   display: flex; */
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.scroll-area:nth-of-type(1) {
+    background: #49b293;
+}
+
+.scroll-area:nth-of-type(2) {
+    background: #c94e4b;
+}
+
+.scroll-area:nth-of-type(3) {
+    background: #4cc1be;
+}
+
+.scroll-area:nth-of-type(4) {
+    background: #8360A6;
+}
